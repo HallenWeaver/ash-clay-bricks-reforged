@@ -1,0 +1,51 @@
+{
+	"schemaVersion": 1,
+	"id": "ash-clay-bricks-reforged",
+	"version": "${version}",
+	"name": "Ash Clay Bricks [Reforged]",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/ash-clay-bricks-reforged/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			{
+				"value": "hallenweaver.acbreforged.AshClayBricksReforged",
+				"adapter": "kotlin"
+			}
+		],
+		"client": [
+			{
+				"value": "hallenweaver.acbreforged.AshClayBricksReforgedClient",
+				"adapter": "kotlin"
+			}
+		],
+		"fabric-datagen": [
+			{
+				"value": "hallenweaver.acbreforged.AshClayBricksReforgedDataGenerator",
+				"adapter": "kotlin"
+			}
+		]
+	},
+	"mixins": [
+		"ash-clay-bricks-reforged.mixins.json",
+		{
+			"config": "ash-clay-bricks-reforged.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.10",
+		"java": ">=21",
+		"fabric-api": "*",
+		"fabric-language-kotlin": "*"
+	}
+}
