@@ -3,7 +3,7 @@
 	"id": "ash-clay-bricks-reforged",
 	"version": "${version}",
 	"name": "Ash Clay Bricks [Reforged]",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "A Minecraft mod that adds ash clay bricks and related blocks, inspired by the Ash Clay mod from CheaterCodes.",
 	"authors": [
 		"Me!"
 	],
